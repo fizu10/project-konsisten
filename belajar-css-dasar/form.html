@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input{
+            margin: 10px;
+        }
+
+        #pass{
+            border-style: dotted;
+            border-color: blueviolet;
+            border-width: 3px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #username{
+            border-style: dotted;
+            border-color: blueviolet;
+            border-width: 3px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #login{
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(164, 100, 206);
+            margin-left: 110px;
+        }
+
+        #ulang{
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(164, 100, 206);
+        }
+
+        #ulang:hover {
+            background-color: pink;
+            color: brown;
+        }
+
+        #login:hover{
+            background-color: pink;
+            color: brown;
+        }
+
+        #username:hover {
+            background-color: antiquewhite;
+        }
+
+        #pass:hover {
+            background-color: antiquewhite;
+        }
+
+        #username:focus, #pass:focus {
+            background-color: aquamarine;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="username">
+            Username: 
+            <input type="text" id="username" name="username" required>
+        </label>
+        <br>
+        <label for="pass">
+            Password: 
+            <input type="password" name="pass" id="pass" required>
+        </label>
+        <br>
+        <input type="submit" value="simpan" id="login">
+        <input type="reset" value="reset" id="ulang">
+    </form>
+</body>
+</html>

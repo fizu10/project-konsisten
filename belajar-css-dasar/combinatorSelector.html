@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selector selector</title>
+    <style>
+        /*descendant selector*/
+     /*   div p{
+            color: brown;
+        } */
+
+        /* child selector (memilih child yang langsung anak dari tag awal) */
+       /* div > p {
+            color: red;
+        } */
+
+        /*ajacent siblings selector (memilih tag yang segaris atau 1 sodara setelahnya)*/
+     /*   div + p {
+            color:  red;
+        } */
+
+        /* general sibling selector (mmengambil semua sodara dari tag awal (tapi hanya setelah tag awal)) */
+        div ~ p {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p>awal</p>
+    <div>
+        <article>
+            <p>ini dipilih</p>
+        </article>
+        <p>ini dipilih</p>
+    </div>
+    <p>ini tidak dipilih</p>
+    <p>penambah aja</p>
+    <h5>yoo</h5>
+    <h5>yoo2</h5>
+</body>
+</html>

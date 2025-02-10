@@ -1,0 +1,12 @@
+/* buat h1 */
+h1{
+    color: aqua;
+    font-size: 20px;
+}
+
+/* buat h2 */
+h2  {
+    color: antiquewhite;
+    font-size: larger;
+    background-color: blue;
+}

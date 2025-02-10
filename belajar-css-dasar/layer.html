@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layer</title>
+    <link rel="icon" href="/belajar-html-dasar/fizhImage.jpg">
+    <style>
+        @layer b, a;
+
+      
+        @layer a {
+            h1{
+                color: red;
+            }
+            h2{
+                color: black;
+            }
+        }
+
+        @layer b {
+            h1{
+                color: pink;
+            }
+            h2{
+                color: blueviolet;
+            }
+        }
+
+        h2{
+            color: blue
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ini judul</h1>
+    <h2>ini subjudul</h2>
+</body>
+</html>

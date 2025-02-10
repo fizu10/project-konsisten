@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: red;
+        }
+        
+        a[target] {
+            color: blueviolet;
+        } 
+        
+        a[target="_blank"] {
+            color: aqua;
+        }
+
+       /* p[title~="belajar"] {
+            color: brown;
+        } */
+
+       /* p[title|="belajar"] {
+            color: brown;
+        } */
+
+        /*buat awalan belajar bakal dipilih */
+       /* p[title^="belajar"] {
+            color: brown;
+        } /*
+
+        /*buat akhiran belajar akan dipilih */
+        /*p[title$="belajar"] {
+            color: brown;
+        }*/
+
+        /*buat yang ada belajar dimanapun akan dipilih */
+       /* p[title*="belajar"] {
+            color: brown;
+        } */
+        
+        /*apapun yang penting ada title belajar */
+        [title*="belajar"] {
+            color: brown;
+        }
+
+       /* .article[title*="belajar"] {
+            color: brown;
+        }*/
+    </style>
+</head>
+<body>
+    <a href="" target="_blank">contoh 1</a> <br>
+    <a href="">contoh 2</a> <br>
+    <a href="" target="_self">contoh 3</a>
+    <p>yoo1</p>
+    <p title="belajar">yoo2</p>
+    <p title="belajarbareng">yoo3</p>
+    <p title="belajar apa">yoo4</p>
+    <p title="belajar-apa">yoo5</p>
+    <h5 title="belajar">bdbd</h5>
+</body>
+</html>
